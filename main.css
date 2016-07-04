@@ -46,6 +46,7 @@ a:active {
 #hero {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 20px;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
   color: #fff;
   display: inline-block;
   font-size: 40px;
@@ -80,8 +81,6 @@ a:active {
 
 header {
   background: rgba(0, 0, 0, 0.85);
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
   box-sizing: border-box;
   color: #fff;
@@ -177,6 +176,7 @@ header nav a:hover, #footer a:hover {
 
 #main > #footer {
   background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
   margin: 0;
   padding-top: 20px;
   text-align: left;
