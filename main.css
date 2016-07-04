@@ -133,7 +133,7 @@ header nav a:hover, #footer a:hover {
 }
 
 #main p {
-  color: rgba(0,0,0,0.84);
+  color: rgba(0,0,0,0.55);
 }
 
 #hero, #main > section {
@@ -159,6 +159,10 @@ header nav a:hover, #footer a:hover {
 #main > section h2[id] {
   margin: 0 0 20px 0;
   padding: 80px 0 0 0;
+}
+
+#projectsSection h3 {
+  margin: 40px 0 0 0;
 }
 
 .fullImage {
