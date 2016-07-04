@@ -42,11 +42,17 @@ function setTopBackgroundHeight() {
 function makeTopBackgroundSemiTransparent() {
   // Make the top bg image more transparent as user scrolls down.
   var topBackgroundElement = document.getElementById('topBackground');
-  // Exponentially decay in opacity.
-  var opacity = Math.exp(
-      -Math.min(
-          1,
-          verticalScroll * 1.618 / topBackgroundElement.offsetHeight));
+  // If we scrolled down enough, start to make the top bg image transparent.
+  var opacity;
+  if (verticalScroll > 20) {
+    // Exponentially decay in opacity.
+    opacity = Math.exp(
+        -Math.min(
+            1,
+            verticalScroll * 1.618 / topBackgroundElement.offsetHeight));
+  } else {
+    opacity = 1;
+  }
   topBackgroundElement.style.opacity = opacity;
 }
 
