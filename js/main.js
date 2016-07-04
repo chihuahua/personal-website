@@ -84,8 +84,12 @@ function handleScroll() {
       (window.pageXOffset || document.scrollLeft) - (document.clientLeft || 0);
   verticalScroll =
       (window.pageYOffset || document.scrollTop)  - (document.clientTop || 0);
-  makeTopBackgroundSemiTransparent();
-  shiftHeroByScroll();
+  // Only apply these effects for Desktop browsers (which we try to guess based
+  // on viewport width). Mobile browsers throttle UI updates on scroll.
+  if (viewportWidth > 600) {
+    makeTopBackgroundSemiTransparent();
+    shiftHeroByScroll();
+  }
 }
 
 
