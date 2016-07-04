@@ -68,7 +68,6 @@ function shiftHeroByScroll() {
         Math.min(1, verticalScroll / topBackgroundElement.offsetHeight) * 30;
   }
   heroElement.style.bottom = '' + percentBottom + '%';
-  console.log(heroElement.style.bottom);
 }
 
 
