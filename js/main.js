@@ -57,6 +57,21 @@ function makeTopBackgroundSemiTransparent() {
 }
 
 
+function shiftHeroByScroll() {
+  // Shift the hero (with profile pic + links) down as user scrolls.
+  var topBackgroundElement = document.getElementById('topBackground');
+  var heroElement = document.getElementById('hero');
+  var percentBottom = 50;
+  if (verticalScroll > 20) {
+    // Move the hero down anywhere from 0 to 30 %. Don't go all the way.
+    percentBottom -=
+        Math.min(1, verticalScroll / topBackgroundElement.offsetHeight) * 30;
+  }
+  heroElement.style.bottom = '' + percentBottom + '%';
+  console.log(heroElement.style.bottom);
+}
+
+
 function handleResize() {
   viewportWidth = document.documentElement.clientWidth;
   viewportHeight = document.documentElement.clientHeight;
@@ -71,6 +86,7 @@ function handleScroll() {
   verticalScroll =
       (window.pageYOffset || document.scrollTop)  - (document.clientTop || 0);
   makeTopBackgroundSemiTransparent();
+  shiftHeroByScroll();
 }
 
 
