@@ -1,0 +1,184 @@
+body, html {
+  font-family: Roboto, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #4285F4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3367D6;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #f00;
+}
+
+#topBackground {
+  background: url(images/kumquats.jpg) transparent no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 -250px 200px -200px #000;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+.avatar {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+#hero {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+}
+
+#socialMediaLinks {
+  margin: 10px 0 0 0;
+}
+
+#socialMediaLinks a {
+  font-size: 100%;
+  text-decoration: none;
+  -webkit-text-stroke: 2px #fff;
+}
+
+#githubLink {
+  color: #fff;
+}
+
+#facebookLink {
+  color: #3B5998;
+}
+
+#linkedInLink {
+  color: #1984BC;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  height: 60px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 16;
+}
+
+#title {
+  color: #fff;
+  display: inline-block;
+  font-size: 150%;
+  margin-top: -4px;
+  padding: 0 0 11px 0;
+}
+
+#title:hover {
+  text-decoration: none;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a, #footer a {
+  color: #B3E5FC;
+  display: inline-block;
+}
+
+header nav a {
+  margin: 0 0 0 30px;
+  padding: 0 0 16px 0;
+}
+
+header nav a:hover, #footer a:hover {
+  border: 3px solid #4285F4;
+  border-width: 0 0 5px 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+#main {
+  margin: 60px 0 0 0;
+  text-align: center;
+}
+
+#main p {
+  color: rgba(0,0,0,0.84);
+}
+
+#hero, #main > section {
+  padding: 20px;
+}
+
+.scrollDownArrow {
+  bottom: 20px;
+  height: 40px;
+  left: 50%;
+  opacity: 0.8;
+  position: absolute;
+  transform: translate(-50%, 0) scale(5, 2);
+  width: 180px;
+  z-index: 4;
+}
+
+#main > section {
+  padding: 80px inherit;
+  margin: -80px 0 0 0;
+}
+
+#main > section h2[id] {
+  margin: 0 0 20px 0;
+  padding: 80px 0 0 0;
+}
+
+.fullImage {
+  border: 5px solid #000;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+#singingSection audio {
+  margin: 10px 0 0 0;
+}
+
+#main > #footer {
+  background: rgba(0, 0, 0, 0.85);
+  margin: 0;
+  padding-top: 20px;
+  text-align: left;
+}
+
+#footer p {
+  margin: 0;
+}
