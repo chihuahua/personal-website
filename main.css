@@ -27,7 +27,7 @@ a:active {
 #topBackground {
   background: url(images/kumquats.jpg) transparent no-repeat;
   background-size: cover;
-  box-shadow: inset 0 -250px 200px -200px #000;
+  box-shadow: inset 0 -250px 200px -200px #000, 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   height: 100%;
   left: 0;
   position: absolute;
